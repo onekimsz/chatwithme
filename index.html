@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>room</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        /* Video Background */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Black Transparent Background */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Black transparent */
+            z-index: 0;
+        }
+        /* Content Styling */
+        .content {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+        .content h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #48ff00; /* Blue color */
+            cursor: pointer;
+            text-shadow: 1px 1px 2px #2c2c2c;
+        }
+        .content h1:hover {
+            text-decoration: underline;
+        }
+        .content p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px;
+            text-shadow: 1px 1px 2px #000;
+        }
+        .button {
+            display: inline-block;
+            background: #ff0000;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #8d1919;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <!-- Replace 'your-video.mp4' with your video file path -->
+            <source src="bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Black Transparent Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1 onclick="redirectRandom()">CLICK HERE FOR MY WHATSAPP</h1>
+        <p>You're Just Seconds Away From Interacting with Real Live Amateurs<br>
+            Ready to Start Playing?</p>
+        <a href="#" class="button" onclick="redirectRandom()">PLAY WITH ME !! >></a>
+    </div>
+
+    <!-- JavaScript for Random Link -->
+    <script>
+        function redirectRandom() {
+            // Array of random links
+            const links = [
+                'https://xtwphrh.mysweet-contactstimes.com/g2t2cdv?t=NARUTO&cid=CHEATER',
+                'https://vnanxl.llovesgreat.com/?utm_source=da57dc555e50572d&&ban=inst&j1=1&s1=226805&s2=2083622&s3=NARUTO&click_id=NARUTO',
+                'https://xtwphrh.mysweet-contactstimes.com/g2t2cdv?t=NARUTO_C1&cid=HACKER',
+                'https://vnanxl.llovesgreat.com/?utm_source=da57dc555e50572d&&ban=inst&j1=1&s1=226805&s2=2083622&s3=NARUTO&click_id=NARUTO'
+            ];
+            // Redirect to a random link
+            const randomLink = links[Math.floor(Math.random() * links.length)];
+            window.location.href = randomLink;
+        }
+    </script>
+</body>
+</html>
